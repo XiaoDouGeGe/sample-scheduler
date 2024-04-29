@@ -152,7 +152,7 @@ data:
   sample-scheduler-config.yaml: |
     apiVersion: kubescheduler.config.k8s.io/v1alpha1
     kind: KubeSchedulerConfiguration
-    schedulerName: sample-scheduler
+    schedulerName: sample-scheduler   ### 这个名字可以叫xxx(不一定是sample-scheduler) -- 应用部署指定的schedulerName需要与这边对应xxx
     leaderElection:
       leaderElect: true
       lockObjectName: sample-scheduler
@@ -160,7 +160,7 @@ data:
     plugins:
       filter:
         enabled:
-        - name: "sample"   ### plugins.Name
+        - name: "sample"   ### 对应代码中的plugins.Name
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -190,7 +190,7 @@ spec:
           image: sample-scheduler:v0.0.3  ### harbor/project/sample-scheduler:v0.0.3
           imagePullPolicy: IfNotPresent
           args:
-            - sample-scheduler   ### bin file
+            - sample-scheduler   ### 对应编译的二进制文件
             - --config=/etc/kubernetes/sample-scheduler-config.yaml
             - --v=3
           resources:
