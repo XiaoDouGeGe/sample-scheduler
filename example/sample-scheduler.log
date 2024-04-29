@@ -1,0 +1,50 @@
+I0429 00:58:35.846010       1 scheduler.go:606] Attempting to schedule pod: default/nginx-deployment-78f768f66-hmx62
+I0429 00:58:35.846372       1 sample.go:29] <ddd...ddd...>
+I0429 00:58:35.846413       1 sample.go:29] <ddd...ddd...>
+I0429 00:58:35.846570       1 factory.go:453] Unable to schedule default/nginx-deployment-78f768f66-hmx62: no fit: 0/2 nodes are available: 2 <no filter label>.; waiting
+I0429 00:58:35.846674       1 scheduler.go:770] Updating pod condition for default/nginx-deployment-78f768f66-hmx62 to (PodScheduled==False, Reason=Unschedulable)
+I0429 00:58:35.868792       1 generic_scheduler.go:1207] Node node02 is a potential node for preemption.
+I0429 00:58:35.868855       1 generic_scheduler.go:1207] Node node01 is a potential node for preemption.
+I0429 00:58:35.869515       1 sample.go:29] <ddd...ddd...>
+I0429 00:58:35.869520       1 sample.go:29] <ddd...ddd...>
+I0429 00:58:35.870108       1 scheduler.go:606] Attempting to schedule pod: default/nginx-deployment-78f768f66-hmx62
+I0429 00:58:35.870340       1 sample.go:29] <ddd...ddd...>
+I0429 00:58:35.870376       1 sample.go:29] <ddd...ddd...>
+I0429 00:58:35.870470       1 factory.go:453] Unable to schedule default/nginx-deployment-78f768f66-hmx62: no fit: 0/2 nodes are available: 2 <no filter label>.; waiting
+I0429 00:58:35.870557       1 scheduler.go:770] Updating pod condition for default/nginx-deployment-78f768f66-hmx62 to (PodScheduled==False, Reason=Unschedulable)
+I0429 00:58:35.889289       1 generic_scheduler.go:1207] Node node02 is a potential node for preemption.
+I0429 00:58:35.889355       1 generic_scheduler.go:1207] Node node01 is a potential node for preemption.
+I0429 00:58:35.889603       1 sample.go:29] <ddd...ddd...>
+I0429 00:58:35.889641       1 sample.go:29] <ddd...ddd...>
+I0429 00:58:35.889840       1 scheduler.go:606] Attempting to schedule pod: default/nginx-deployment-78f768f66-vssdq
+I0429 00:58:35.890103       1 sample.go:29] <ddd...ddd...>
+I0429 00:58:35.890182       1 sample.go:29] <ddd...ddd...>
+I0429 00:58:35.890330       1 factory.go:453] Unable to schedule default/nginx-deployment-78f768f66-vssdq: no fit: 0/2 nodes are available: 2 <no filter label>.; waiting
+I0429 00:58:35.890437       1 scheduler.go:770] Updating pod condition for default/nginx-deployment-78f768f66-vssdq to (PodScheduled==False, Reason=Unschedulable)
+I0429 00:58:35.908300       1 generic_scheduler.go:1207] Node node02 is a potential node for preemption.
+I0429 00:58:35.908351       1 generic_scheduler.go:1207] Node node01 is a potential node for preemption.
+I0429 00:58:35.908517       1 sample.go:29] <ddd...ddd...>
+I0429 00:58:35.908565       1 sample.go:29] <ddd...ddd...>
+I0429 00:58:35.908655       1 scheduler.go:606] Attempting to schedule pod: default/nginx-deployment-78f768f66-vssdq
+I0429 00:58:35.908808       1 sample.go:29] <ddd...ddd...>
+I0429 00:58:35.908838       1 sample.go:29] <ddd...ddd...>
+I0429 00:58:35.908902       1 factory.go:453] Unable to schedule default/nginx-deployment-78f768f66-vssdq: no fit: 0/2 nodes are available: 2 <no filter label>.; waiting
+I0429 00:58:35.908947       1 scheduler.go:770] Updating pod condition for default/nginx-deployment-78f768f66-vssdq to (PodScheduled==False, Reason=Unschedulable)
+I0429 00:58:35.916272       1 generic_scheduler.go:1207] Node node02 is a potential node for preemption.
+I0429 00:58:35.916320       1 generic_scheduler.go:1207] Node node01 is a potential node for preemption.
+I0429 00:58:35.916568       1 sample.go:29] <ddd...ddd...>
+I0429 00:58:35.916614       1 sample.go:29] <ddd...ddd...>
+
+
+
+I0429 00:59:42.329275       1 scheduler.go:606] Attempting to schedule pod: default/nginx-deployment-78f768f66-hmx62
+I0429 00:59:42.329459       1 sample.go:29] <ddd...ddd...>
+I0429 00:59:42.329484       1 sample.go:29] <ddd...ddd...>
+I0429 00:59:42.329609       1 scheduler.go:606] Attempting to schedule pod: default/nginx-deployment-78f768f66-vssdq
+I0429 00:59:42.329692       1 sample.go:29] <ddd...ddd...>
+I0429 00:59:42.329713       1 sample.go:29] <ddd...ddd...>
+I0429 00:59:42.329741       1 factory.go:519] Attempting to bind nginx-deployment-78f768f66-hmx62 to node02
+I0429 00:59:42.330179       1 factory.go:519] Attempting to bind nginx-deployment-78f768f66-vssdq to node02
+I0429 00:59:42.402330       1 scheduler.go:752] pod default/nginx-deployment-78f768f66-hmx62 is bound successfully on node "node02", 2 nodes evaluated, 1 nodes were found feasible.
+I0429 00:59:42.412198       1 scheduler.go:752] pod default/nginx-deployment-78f768f66-vssdq is bound successfully on node "node02", 2 nodes evaluated, 1 nodes were found feasible.
+
